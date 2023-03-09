@@ -1,51 +1,113 @@
-*{
-    font-family: 'Russo One', sans-serif;
+:root{
+    --width:350px;
+    --font-size:18px;
+}
+
+html, body{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color:#000;
+}
+
+ul li {
+    list-style: none;
+}
+
+.theme{
+    padding:20px 0;
 }
 
 .container{
-    border:3px solid #e3e3f7;
+    display: flex;
+    width: 70%;
+    height: 70%;
+    margin:auto;
     border-radius: 10px;
-    width:530px;
-    margin: 60px auto;
-    padding: 20px 30px;
+    border: 3px solid #000;
 }
 
-.circle{
-    width: 100px;
-    height: 100px;
-    border-radius: 50px;
-    margin:70px 30px;
+.pic{
+    scale: .8;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+
+nav {
+    flex:3;
+    border-right: 3px dashed #b6b6b6;
+    
+}
+    
+nav ul {
+    padding: 10px;
+    margin: 0;
+}
+  
+nav li {
+    display: block;
+    padding: 10px;
+}
+
+.main{
+    flex:3;
+    text-align: start;
+}
+
+.main ul{
+    margin-top : 50px;
+    padding-left: 70px;
+}
+.main ul li{
+    padding: 15px 0;
+    font-size: 18px;
+}
+
+.btn{
     cursor: pointer;
 }
 
-.inner{
-    left:50px;
-    top:30px;
-    position: relative;
-    width:350px;
-    font-size: 30px;
-    border: 1px solid #fff;
-    background-color: rgba(255, 255, 255, 0.7);
-    border-radius: 10px;
+.icons *{
+    margin-top: 30px;
     padding:10px;
+    scale: 1.5;
 }
 
-.red{
-    background-color: rgb(255, 229, 221);
-    color: rgb(99, 47, 31);
+.sub {
+    flex:4;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
-.pink{
-    background-color: rgb(250, 218, 225);
-    color: rgb(128, 80, 118);
+.new {
+    color:#b6b6b6;
+    cursor: default;
 }
 
-.purpul{
-    background-color: rgb(232, 218, 239);
-    color: rgb(102, 80, 118);
+.linkList > .btn:hover{
+    transform-origin: left;
+    scale:1.1;
+    font-weight: bold;
 }
 
-.yellow{
-    background-color: rgb(255, 243, 214);
-    color: rgb(71, 64, 20);
+.container > .btn:hover{
+    transform-origin: center;
+    scale:1.1;
+    font-weight: bold;
+}
+
+@media screen and (max-width:1200px) {
+    
+    .sub {
+        display: none;
+    }
 }

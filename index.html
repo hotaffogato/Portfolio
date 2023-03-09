@@ -1,30 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
+    <link rel="stylesheet" href="style.css">
+    <script src="home.js" defer></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/abe3ad99a5.js" crossorigin="anonymous"></script>
     <title>Portfolio</title>
+
 </head>
+
 <body>
+
+    <div class="theme">
+        <h1> &lt; Portfolio Page &gt; </h1>
+    </div>
+
     <div class="container">
-        <div class="circle purpul" onclick="location.href='https://hotaffogato.github.io/'"> 
-            <div class="inner"> React - Free Blog </div>
+        <nav>
+            <ul>
+                <li><img class="pic" src="pic.jpg" /></li>
+                <h3>김수현 / SuHyeon Kim</h3>
+                <li>프론트엔드 (신입)</li>
+                <li class="btn" onclick="copyBtn(this)">
+                    <i class="fa-regular fa-envelope"></i> 
+                    kshmine6@gmail.com 
+                    <button>Copy</button>
+                </li>
+                <li class="btn"><a href='https://github.com/hotaffogato' target="_blank">
+                    <i class="fa-brands fa-github"></i> https://github.com/hotaffogato
+                    </a>
+                </li>
+
+                <li class="icons">
+                    <i class="fa-brands fa-html5"></i>
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <i class="fa-brands fa-square-js"></i>
+                    <i class="fa-brands fa-node-js"></i>
+                    <i class="fa-brands fa-react"></i>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="main">
+
+            <ul class="linkList">
+                
+                <h2>2023.03</h2>
+
+                <li class="new">Responsive Page </li>
+                
+                <h2>2023.01</h2>
+                
+                <li class="btn">
+                    <a href='https://hotaffogato.github.io/' target="_blank"> 
+                    React - Free Blog 
+                    </a>
+                </li>
+
+                <li class="btn">
+                    <a href='https://hotaffogato.github.io/React-Movies/' target="_blank"> 
+                    React - Movies App 
+                    </a>
+                </li>
+                
+                <h2>2022.12</h2>
+
+                <li class="btn">
+                    <a href='https://hotaffogato.github.io/React-Todolist/' target="_blank">
+                    React - Todo List
+                    </a>
+                </li>
+                
+                <li class="btn">
+                    <a href='https://hotaffogato.github.io/VanillaJs-todo/' target="_blank">            
+                    Vanilla JS - Todo List 
+                    </a>
+                </li>
+
+            </ul>
         </div>
-        <div class="circle pink" onclick="location.href='https://hotaffogato.github.io/React-Movies/'"> 
-            <div class="inner"> React - Movies </div>
+
+        <div class="sub">
+            subarea
         </div>
-        <div class="circle red" onclick="location.href='https://hotaffogato.github.io/React-Todolist/'">
-            <div class="inner"> React - Todo List </div>
-        </div>
-        <div class="circle yellow" onclick="location.href='https://hotaffogato.github.io/VanillaJs-todo/'">            
-            <div class="inner"> Vanilla JS - Todo List </div>
-        </div>
+
     </div>
 </body>
+
 </html>
 
