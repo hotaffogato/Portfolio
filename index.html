@@ -40,6 +40,11 @@
                     <i class="fa-brands fa-github"></i> https://github.com/hotaffogato
                     </a>
                 </li>
+                <li class="btn"><a href='https://blog.naver.com/hotaffogato' target="_blank">
+                    <i class="fa-solid fa-blog"></i> https://blog.naver.com/hotaffogato
+                    </a>
+                </li>
+               
 
                 <li class="icons">
                     <i class="fa-brands fa-html5"></i>
@@ -57,17 +62,21 @@
                 
                 <h2>2023.03</h2>
 
-                <li class="new">Responsive Page </li>
+
+                <li class="new">
+                    Update Todo List<br>
+                    Naver, Tistory : Study
+                </li>
                 
                 <h2>2023.01</h2>
                 
-                <li class="btn">
+                <li class="btn" id="FreeBlog" onmouseover="showing(this)" onmouseout="notShowing(this)">
                     <a href='https://hotaffogato.github.io/' target="_blank"> 
                     React - Free Blog 
                     </a>
                 </li>
 
-                <li class="btn">
+                <li class="btn" id="ReactMovies" onmouseover="showing(this)" onmouseout="notShowing(this)">
                     <a href='https://hotaffogato.github.io/React-Movies/' target="_blank"> 
                     React - Movies App 
                     </a>
@@ -75,14 +84,14 @@
                 
                 <h2>2022.12</h2>
 
-                <li class="btn">
+                <li class="btn" id="ReactTodolist" onmouseover="showing(this)" onmouseout="notShowing(this)">
                     <a href='https://hotaffogato.github.io/React-Todolist/' target="_blank">
                     React - Todo List
                     </a>
                 </li>
                 
-                <li class="btn">
-                    <a href='https://hotaffogato.github.io/VanillaJs-todo/' target="_blank">            
+                <li class="btn" id="VanillaJs" onmouseover="showing(this)" onmouseout="notShowing(this)" >
+                    <a href='https://hotaffogato.github.io/VanillaJs-todo/' target="_blank"> 
                     Vanilla JS - Todo List 
                     </a>
                 </li>
@@ -91,7 +100,39 @@
         </div>
 
         <div class="sub">
-            
+            <div class="inner hidden" id="VanillaJsText">
+                <h2>&lt; Todo list &gt;</h2>
+                개발 인원 : 1명<br><br>
+                플랫폼 : web<br><br>
+                언어 : html/css, Java Script<br><br>
+                IDE : Visual Studio Code<br><br>
+                Update : 23.03.20
+            </div>
+            <div class="inner hidden" id="ReactTodolistText">
+                <h2>&lt; Todo list &gt;</h2>
+                개발 인원 : 1명<br><br>
+                플랫폼 : web<br><br>
+                언어 : html/css, Java Script<br><br>
+                IDE : Visual Studio Code<br><br>
+                라이브러리 : React<br><br>
+                Updating...
+            </div>
+            <div class="inner hidden" id="ReactMoviesText">
+                <h2>&lt; Movie App &gt;</h2>
+                개발 인원 : 1명<br><br>
+                플랫폼 : web<br><br>
+                언어 : html/css, Java Script<br><br>
+                IDE : Visual Studio Code<br><br>
+                라이브러리/API : React, RESTful API(JSON)
+            </div>
+            <div class="inner hidden" id="FreeBlogText">
+                <h2>&lt; Free Blog &gt;</h2>
+                개발 인원 : 1명<br><br>
+                플랫폼 : web<br><br>
+                언어 : html/css, Java Script<br><br>
+                IDE : Visual Studio Code<br><br>
+                라이브러리 : React
+            </div>
         </div>
 
     </div>

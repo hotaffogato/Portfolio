@@ -3,6 +3,10 @@
     --font-size:18px;
 }
 
+.hidden{
+    display:none;
+}
+
 html, body{
     justify-content: center;
     align-items: center;
@@ -88,8 +92,13 @@ nav li {
     text-align: center;
 }
 
+.inner {
+    position:relative;
+    top:15%;
+
+}
+
 .new {
-    color:#b6b6b6;
     cursor: default;
 }
 
