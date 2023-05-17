@@ -9,14 +9,13 @@ const copyBtn = (element) => {
 const HIDDEN = "hidden"
 
 const showing = (element) => {
-    var target = element.id
-    var text = document.getElementById(`${target}Text`)
+    let target = element.id
+    let text = document.getElementById(`${target}Text`)
     text.classList.remove(HIDDEN)
 }
 
 const notShowing = (element) => {
-    var target = element.id
-    var text = document.getElementById(`${target}Text`)
+    let target = element.id
+    let text = document.getElementById(`${target}Text`)
     text.classList.add(HIDDEN)
 }
-
