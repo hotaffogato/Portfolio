@@ -33,11 +33,12 @@ ul li {
 .container{
     display: flex;
     width: 70%;
-    height: 70%;
+    height: auto;
     margin:auto;
     border-radius: 10px;
     border: 3px solid #000;
 }
+
 
 .pic{
     scale: .8;
@@ -48,6 +49,7 @@ ul li {
 nav {
     flex:3;
     margin: auto;
+    padding-bottom: 50px;
 }
     
 nav ul {
@@ -107,6 +109,11 @@ nav li {
     font-weight: bold;
 }
 
+.link:hover{
+    transform-origin: center;
+    font-weight: bold;
+}
+
 .container > .btn:hover{
     transform-origin: center;
     scale:1.1;
@@ -114,8 +121,23 @@ nav li {
 }
 
 @media screen and (max-width:1200px) {
-    
     .sub {
         display: none;
     }
+}
+
+@media screen and (max-width:860px) {
+    .sub {
+        display: none;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .container > * {
+        flex: 1;
+    }
+    
 }
