@@ -11,7 +11,7 @@ html, body{
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 100vw;
+    height: 100vh;
     margin: 0;
     padding: 0;
     font-family: 'Source Sans Pro', sans-serif;
@@ -69,7 +69,6 @@ nav li {
 }
 
 .main ul{
-    margin-top : 50px;
     padding-left: 70px;
 }
 .main ul li{
@@ -92,16 +91,21 @@ nav li {
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin-top: 9em;
+
 }
 
 .inner {
     position:relative;
-    top:5em;
-
 }
 
 .new {
     cursor: default;
+}
+
+.linkList{
+    margin:0;
+    padding:20px 0 20px 0;
 }
 
 .linkList > .btn:hover{
@@ -119,6 +123,10 @@ nav li {
     transform-origin: center;
     scale:1.1;
     font-weight: bold;
+}
+
+.small{
+    font-size: 14px;
 }
 
 @media screen and (min-width:1600px) {
