@@ -91,12 +91,12 @@ nav li {
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: 9em;
-
+    margin-top: 3em;
 }
 
 .inner {
     position:relative;
+    text-align: start;
 }
 
 .new {
